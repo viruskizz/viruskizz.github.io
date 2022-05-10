@@ -1,0 +1,118 @@
+<div class="my-24">
+    <!-- Skills Section -->
+    <div id="activities" class="w-100 flex flex-col items-center mx-6 scroll-mt-24">
+        <div class="md:w-1/3 text-left md:text-center">
+            <h5 class="text-sky-500 text-xl font-extrabold">What I did ?</h5>
+            <h3 class="text-4xl text-slate-900 font-extrabold">My Activities</h3>
+            <p class="font-semibold text-gray-400 mt-4">I run the social activities to evolve developer in Thailand in sometime. I love to join technology activities for develop my skill.</p>
+        </div>
+        <div id="activity-buttons" class="mt-6 flex gap-x-6">
+            <button
+                onclick="toggleActivityCards(event, 'ALL')"
+                id="activities-all"
+                class="inline-block px-6 py-2 rounded-full bg-sky-400 text-white  w-sm">All</button>
+            <button
+                onclick="toggleActivityCards(event, 'SOCIAL')"
+                id="activities-social"
+                class="inline-block px-6 py-2 rounded-full bg-white text-gray-400 w-sm">Social</button>
+            <button
+                onclick="toggleActivityCards(event, 'TECH')"
+                id="activities-tech"
+                class="inline-block px-6 py-2 rounded-full bg-white text-gray-400 w-sm">Tech</button>
+            <button
+                onclick="toggleActivityCards(event, 'OTHER')"
+                id="activities-other"
+                class="inline-block px-6 py-2 rounded-full bg-white text-gray-400 w-sm">Other</button>
+        </div>
+        <div id="actvity-cards" class="flex flex-row justify-center items-start flex-wrap gap-x-10 gap-y-12 mt-8">
+            <div data-type="social" class="flex flex-col justify-center items-center w-60 text-center">
+                <img
+                    src="images/activities/aws-event-speaker.jpg"
+                    alt="aws-event-speaker"
+                    class="object-cover rounded-2xl w-60 h-60">
+                    <h3 class="text-xl text-slate-900 font-extrabold mt-3">AWS DB Speaker</h3>
+                    <p class="font-semibold text-gray-400 mt-2">Evant Driven on AWS DynamoDB Stream</p>
+            </div>
+            <div data-type="social" class="flex flex-col justify-center items-center w-60 text-center">
+                <img
+                    src="images/activities/aws-devops-speaker.jpg"
+                    alt="aws-devops-speaker"
+                    class="object-cover rounded-2xl w-60 h-60">
+                    <h3 class="text-xl text-slate-900 font-extrabold mt-3">AWS DevOps Speaker</h3>
+                    <p class="font-semibold text-gray-400 mt-2">Devops philosophy and tools on AWS Community day</p>
+            </div>
+            <div data-type="social" class="flex flex-col justify-center items-center w-60 text-center">
+                <img
+                    src="images/activities/aws-sls-speaker.png"
+                    alt="aws-sls-speaker"
+                    class="object-cover rounded-2xl w-60 h-60">
+                    <h3 class="text-xl text-slate-900 font-extrabold mt-3">Serverless Speaker</h3>
+                    <p class="font-semibold text-gray-400 mt-2">Gigabyte serverless event in Thailand</p>
+            </div>
+            <div data-type="tech" class="flex flex-col justify-center items-center w-60 text-center">
+                <img
+                    src="images/activities/aws-gamedays.png"
+                    alt="aws-gamedays"
+                    class="object-cover rounded-2xl w-60 h-60">
+                    <h3 class="text-xl text-slate-900 font-extrabold mt-3">AWS Gamedays</h3>
+                    <p class="font-semibold text-gray-400 mt-2">rank 30/300 from AWS re:invent2019 1day hackathon</p>
+            </div>
+            <div data-type="tech" class="flex flex-col justify-center items-center w-60 text-center">
+                <img
+                    src="images/activities/aws-reinvent2018.jpg"
+                    alt="aws-reinvent2018"
+                    class="object-cover rounded-2xl w-60 h-60">
+                    <h3 class="text-xl text-slate-900 font-extrabold mt-3">AWS re:invent2018</h3>
+                    <p class="font-semibold text-gray-400 mt-2">The biggest yearly AWS event at Las Vegas</p>
+            </div>
+            <div data-type="tech" class="flex flex-col justify-center items-center w-60 text-center">
+                <img
+                    src="images/activities/aws-reinvent2019.jpg"
+                    alt="aws-reinvent2019"
+                    class="object-cover rounded-2xl w-60 h-60">
+                    <h3 class="text-xl text-slate-900 font-extrabold mt-3">AWS re:invent2019</h3>
+                    <p class="font-semibold text-gray-400 mt-2">The biggest yearly AWS event at Las Vegas</p>
+            </div>
+            <div data-type="tech" class="flex flex-col justify-center items-center w-60 text-center">
+                <img
+                    src="images/activities/aws-db-training.jpg"
+                    alt="aws-db-training"
+                    class="object-cover rounded-2xl w-60 h-60">
+                    <h3 class="text-xl text-slate-900 font-extrabold mt-3">AWS Trainning</h3>
+                    <p class="font-semibold text-gray-400 mt-2">a ton of AWS trainning associate and professional courses</p>
+            </div>
+            <div data-type="tech" class="flex flex-col justify-center items-center w-60 text-center">
+                <img
+                    src="images/activities/gcp-training.jpg"
+                    alt="gcp-training"
+                    class="object-cover rounded-2xl w-60 h-60">
+                    <h3 class="text-xl text-slate-900 font-extrabold mt-3">GCP Trainning</h3>
+                    <p class="font-semibold text-gray-400 mt-2">Google Cloud Platform event</p>
+            </div>
+            <div data-type="other" class="flex flex-col justify-center items-center w-60 text-center">
+                <img
+                    src="images/activities/other-volunteer-traffic.jpg"
+                    alt="other-volunteer-traffic"
+                    class="object-cover rounded-2xl w-60 h-60">
+                    <h3 class="text-xl text-slate-900 font-extrabold mt-3">Traffic Volunteer</h3>
+                    <p class="font-semibold text-gray-400 mt-2">Dhammayatra event, the biggest pilgrim on the roads in Thailand</p>
+            </div>
+            <div data-type="other" class="flex flex-col justify-center items-center w-60 text-center">
+                <img
+                    src="images/activities/other-voluteer-monk-training.jpg"
+                    alt="aother-voluteer-monk-training"
+                    class="object-cover rounded-2xl w-60 h-60">
+                    <h3 class="text-xl text-slate-900 font-extrabold mt-3">Educated Volunteer</h3>
+                    <p class="font-semibold text-gray-400 mt-2">Share knowledge to underprivileged for evolve world</p>
+            </div>
+            <div data-type="other" class="flex flex-col justify-center items-center w-60 text-center">
+                <img
+                    src="images/activities/other-runner.jpg"
+                    alt="other-runner"
+                    class="object-cover rounded-2xl w-60 h-60">
+                    <h3 class="text-xl text-slate-900 font-extrabold mt-3">Running Sharity</h3>
+                    <p class="font-semibold text-gray-400 mt-2">Running for sharity to help other people with my stength</p>
+            </div>
+        </div>
+    </div>
+</div>
