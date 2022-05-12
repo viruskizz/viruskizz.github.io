@@ -1,7 +1,15 @@
-<nav class="fixed w-full top-0 flex justify-center bg-slate-900 border-gray-200 px-2 py-2.5 h-14 sm:h-20 sm:px-4">
+<nav class="fixed w-full top-0 flex justify-center bg-slate-900 border-gray-200 px-4 py-2.5 h-14 sm:h-20 sm:px-4">
 	<div class="container flex flex-wrap justify-between items-center mx-auto">
 		<a href="#" class="flex items-center">
-		<img src="images/my-logo.png" class="mr-3 h-6 rounded-full sm:h-9" alt="Flowbite Logo">
+			<picture>
+				<source media="(min-width: 640px)" srcset="images/my-logo.png" />
+				<img
+					width="24"
+					height="24"
+					src="images/my-logo_48px.png"
+					alt="Flowbite Logo"
+					class="mr-3 h-6 rounded-full sm:h-9">
+			</picture>
 			<span class="self-center text-2xl sm:text-3xl font-semibold whitespace-nowrap text-white">Portfolio</span>
 		</a>
 		<div class="hidden justify-between items-center w-full md:flex md:w-auto" id="mobile-menu-4">
@@ -25,12 +33,14 @@
 		</div>
 		<div class="flex">
 			<button
+				aria-label="download-cv"
 				type="button"
-				class="text-white bg-sky-500 font-semibold hover:bg-sky-400 rounded-lg text-sm px-4 py-1.5 text-center mr-3 sm:px-5 sm:py-2.5 md:mr-0"
+				class="hidden md:inline-block text-white bg-sky-500 font-semibold hover:bg-sky-400 rounded-lg text-sm px-4 py-1.5 text-center mr-3 sm:px-5 sm:py-2.5 md:mr-0"
 				onclick="printPdf()">
 				Download CV
 			</button>
 			<button
+				aria-label="mobile-menu"
 				type="button"
 				class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg hover:bg-gray-100 md:hidden"
 				onclick="toggleMenu()">
@@ -60,5 +70,12 @@
 		<li>
 			<a href="#activities" class="block py-2 pr-4 pl-3 text-base text-gray-400 rounded md:p-0 text-white hover:text-sky-700">Activities</a>
 		</li>
+		<button
+			aria-label="download-cv"
+			type="button"
+			class="text-white bg-sky-500 font-semibold hover:bg-sky-400 rounded-lg text-sm px-4 py-1.5 text-center mr-3 sm:px-5 sm:py-2.5 md:mr-0"
+			onclick="printPdf()">
+			Download CV
+		</button>
 	</ul>
 </div>
