@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Portfolio of Araiva to represent to Thitiwut Somsa">
+	<meta property="og:title" content="42Bbangkok Araiva's Profolio" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://viruskizz.github.io/42bangkok-discovery-piscine/tsomsa" />
+    <meta property="og:image" content="https://viruskizz.github.io/42bangkok-discovery-piscine/tsomsa/araiva-cover.png" />
+    <meta property="og:description" content="42Bangkok Discovery pisciner - Rush Project: Araiva's Profolio" />
+    <meta name="theme-color" content="#11284D">
+    <meta name="twitter:site" content="@discord">
+    <meta name="twitter:creator" content="@viruskizz">
+    <meta name="twitter:card" content="summary_large_image">
+
+	<!-- Include library -->
+	<link rel="icon" type="image/png" href="images/my-logo-circle.png"/>
+	<!-- <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script> -->
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+	<!-- <link rel="preload" as="style" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+	<link rel="preload" as="font" type="font/woff2" crossorigin href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"> -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="preload" as="font">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap">
+	<script src="https://cdn.tailwindcss.com"></script>
+	<link rel="stylesheet" href="css/style.css">
+	<title>Araiva Portfolio</title>
+	<script src="js/index.js" defer></script>
+</head>
+<body>
+	<!-- navbar section -->
+	<nav class="fixed w-full top-0 flex justify-center bg-slate-900 border-gray-200 px-4 py-2.5 h-14 sm:h-20 sm:px-4">
+		<div class="container flex flex-wrap justify-between items-center mx-auto">
+			<a href="#" class="flex items-center">
+				<picture>
+					<source media="(min-width: 640px)" srcset="images/my-logo.png" />
+					<img
+						width="24"
+						height="24"
+						src="images/my-logo_48px.png"
+						alt="Flowbite Logo"
+						class="mr-3 h-6 w-6 rounded-full sm:h-9 sm:w-9">
+				</picture>
+				<span class="self-center text-2xl sm:text-3xl font-semibold whitespace-nowrap text-white">Portfolio</span>
+			</a>
+			<div class="hidden justify-between items-center w-full md:flex md:w-auto" id="mobile-menu-4">
+				<ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
+					<li class="hidden lg:inline-block">
+						<a href="#aboutme" class="block py-2 pr-4 pl-3 text-base text-gray-400 rounded md:p-0 text-white hover:text-sky-700">About Me</a>
+					</li>
+					<li>
+						<a href="#education" class="block py-2 pr-4 pl-3 text-base text-gray-400 rounded md:p-0 text-white hover:text-sky-700">Education</a>
+					</li>
+					<li class="hidden lg:inline-block">
+						<a href="#works" class="block py-2 pr-4 pl-3 text-base text-gray-400 rounded md:p-0 text-white hover:text-sky-700">Works</a>
+					</li>
+					<li>
+						<a href="#expertise" class="block py-2 pr-4 pl-3 text-base text-gray-400 rounded md:p-0 text-white hover:text-sky-700">Expertise</a>
+					</li>
+					<li>
+						<a href="#activities" class="block py-2 pr-4 pl-3 text-base text-gray-400 rounded md:p-0 text-white hover:text-sky-700">Activities</a>
+					</li>
+				</ul>
+			</div>
+			<div class="flex">
+				<button
+					aria-label="download-cv"
+					type="button"
+					class="hidden md:inline-block text-white bg-sky-500 font-semibold hover:bg-sky-400 rounded-lg text-sm px-4 py-1.5 text-center mr-3 sm:px-5 sm:py-2.5 md:mr-0"
+					onclick="printPdf()">
+					Download CV
+				</button>
+				<button
+					aria-label="mobile-menu"
+					type="button"
+					class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg hover:bg-gray-100 md:hidden"
+					onclick="toggleMenu()">
+					<i class="fas fa-bars fa-lg"></i>
+				</button>
+			</div>
+		</div>
+	</nav>
+	<!-- <div class="h-14"></div> -->
+	<div id="mobile-menu" class="hidden fixed top-14 sm:top-20 bg-slate-900 flex w-full rounded-b-lg pb-6">
+		<ul class="flex flex-col gap-4 ml-4 focus:bg-white" onclick="toggleMenu()">
+			<li>
+				<a href="#" class="block py-2 pr-4 pl-3 text-base text-gray-400 rounded md:p-0 text-white hover:text-sky-700">Home</a>
+			</li>
+			<li>
+				<a href="#aboutme" class="block py-2 pr-4 pl-3 text-base text-gray-400 rounded md:p-0 text-white hover:text-sky-700">About Me</a>
+			</li>
+			<li>
+				<a href="#education" class="block py-2 pr-4 pl-3 text-base text-gray-400 rounded md:p-0 text-white hover:text-sky-700">Education</a>
+			</li>
+			<li>
+				<a href="#works" class="block py-2 pr-4 pl-3 text-base text-gray-400 rounded md:p-0 text-white hover:text-sky-700">Works</a>
+			</li>
+			<li>
+				<a href="#expertise" class="block py-2 pr-4 pl-3 text-base text-gray-400 rounded md:p-0 text-white hover:text-sky-700">Expertise</a>
+			</li>
+			<li>
+				<a href="#activities" class="block py-2 pr-4 pl-3 text-base text-gray-400 rounded md:p-0 text-white hover:text-sky-700">Activities</a>
+			</li>
+			<button
+				aria-label="download-cv"
+				type="button"
+				class="text-white bg-sky-500 font-semibold hover:bg-sky-400 rounded-lg text-sm px-4 py-1.5 text-center mr-3 sm:px-5 sm:py-2.5 md:mr-0"
+				onclick="printPdf()">
+				Download CV
+			</button>
+		</ul>
+	</div>
+	<!-- navbar section	 -->
+
+	<div class="container mx-auto">
+		<!-- home section -->
+		<div class="flex flex-col items-start mt-28 mb-24 mx-6 m-h-52 md:flex-row md:justify-between">
+			<div class="self-center md:w-5/12">
+				<div>
+					<h4 class="text-sky-500 font-bold">Hey There I 👋 am</h4>
+					<h3 class="text-4xl font-extrabold	 my-2">Thitiwut Somsa</h3>
+					<p class="text-xl font-bold"><span class="text-gray-500">Professional</span> DevOps Engineer</p>
+					<p class="mt-6 font-semibold  text-gray-400">I'm stundent of 42Bangkok, the coding school. I develop web application. I love to play games in my free time. My favorite game is Final Fantasy.</p>
+					<div class="mt-8 flex flex-row justify-start">
+						<a href="#aboutme">
+							<button class="inline-block px-6 py-2 mr-2 sm:mr-6 rounded-2xl bg-sky-500 text-white hover:bg-sky-400">
+								Learn More
+							</button>
+						</a>
+						<a href="#footer">
+							<button class="inline-block px-6 py-2 rounded-2xl bg-gray-800 text-white hover:bg-sky-800">
+								Contact Me
+							</button>
+						</a>
+						
+					</div>
+				</div>
+			</div>
+			<div class="flex justify-center mt-24 w-64 sm:w-96 md:mt-0 md:w-5/12">
+				<picture>
+					<source type="image/webp" srcset="images/squall_leonhart_256px.webp">
+					<source type="image/png" srcset="images/squall_leonhart_256px.png">
+					<source media="(min-width: 640px)" type="image/webp" srcset="images/squall_leonhart_.webp">
+					<source media="(min-width: 640px)" type="image/png" srcset="images/squall_leonhart.png">
+					<img 
+						loading="auto"
+						src="images/squall_leonhart_256px.png"
+						width="256"
+						height="268"
+						alt="profile"
+						class="w-64 sm:w-96 h-auto object-contain">
+				</picture>
+			</div>
+		</div>
+		<!-- home section -->
+		
+		<!-- aboutme section -->
+		<div class="flex flex-col items-start mx-6 my-24 md:flex-row md:justify-between md:gap-20 h-auto md:h50">
+			<div id="aboutme" class="flex md:w-5/12 flex-col justify-between h-full scroll-mt-24">
+				<div>
+					<h4 class="text-sky-500 text-2xl font-extrabold">ABOUT ME</h4>
+					<h3 class="text-4xl text-slate-900 font-extrabold">Dev operation,<br>on final fantasy</h3>
+				</div>
+				<p class="font-semibold text-gray-400 mt-4">Development and Operation on Fancy concept. It's amazing automation project with code. The application code is the best as final project that it alway the best project I can do</p>
+			</div>
+			<div class="flex flex-col justify-between h-full mt-16 md:mt-0 md:w-5/12 ">
+				<div>
+					<h3 class="text-3xl font-extrabold">Connect With Me</h3>
+					<p class="mt-4 font-semibold text-gray-400">There are several way to connect me such as Facebook Github Discord. Feel free to connect with me if you have any question or wanna dicuss just discord to me. The social media link are below. Let's connect</p>
+				</div>
+				<div class="flex flex-row gap-3 mt-4">
+					<a aria-label="my-fb" href="https://www.facebook.com/araiva.viruskizz/" target="_blank" class="flex items-center justify-center text-gray-400 border-2 w-8 h-8 rounded-full hover:bg-sky-600 hover:text-white hover:border-white">
+						<i class="fab fa-facebook-f fa-sm"></i>
+					</a>
+					<a aria-label="my-twitter" href="https://twitter.com/viruskizz/" target="_blank" class="flex items-center justify-center text-gray-400 border-2 w-8 h-8 rounded-full hover:bg-sky-600 hover:text-white hover:border-white">
+						<i class="fab fa-twitter fa-sm"></i>
+					</a>
+					<a aria-label="my-linkedin" href="https://www.linkedin.com/in/araiva/" target="_blank" class="flex items-center justify-center text-gray-400 border-2 w-8 h-8 rounded-full hover:bg-sky-600 hover:text-white hover:border-white">
+						<i class="fab fa-linkedin fa-sm"></i>
+					</a>
+					<a aria-label="my-github" href="https://github.com/viruskizz/" target="_blank" class="flex items-center justify-center text-gray-400 border-2 w-8 h-8 rounded-full hover:bg-sky-600 hover:text-white hover:border-white">
+						<i class="fab fa-github fa-sm"></i>
+					</a>
+					<a aria-label="my-discord" href="https://discordapp.com/users/306980438004727808/" target="_blank" class="flex items-center justify-center text-gray-400 border-2 w-8 h-8 rounded-full hover:bg-sky-600 hover:text-white hover:border-white">
+						<i class="fab fa-discord fa-sm"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+		<!-- aboutme section -->
+		
+		<!-- education section -->
+		<div class="flex flex-col items-start mx-6 my-24 md:flex-row md:justify-between md:gap-20 h-auto md:h50">
+			<div id="education" class="flex md:w-5/12 flex-col justify-between h-full scroll-mt-24">
+				<h5 class="text-sky-500 text-xl font-extrabold">About knowledge</h5>
+				<h3 class="text-3xl font-extrabold">Education</h3>
+				<p class="mt-4 font-semibold text-gray-400">I'm graduated from Aviation Technology that isn't in technology fields. I knew about code while I studied in university. So I shift my work to technology field. I think it suit to me.</p>
+				<div class="mt-6 flex flex-col gap-6">
+					<div class="flex flex-row gap-4">
+						<img
+							loading="lazy"
+							src="images/eds/42-logo.png"
+							alt="42bangkok-logo"
+							class="w-12 h-12 border-gray-200 rounded-full">
+						<div>
+							<p class="text-sky-500 text-base font-extrabold">2022 - Present</p>
+							<h5 class="text-slate-800 text-lg font-bold hover:underline">
+								<a aria-label="42bangkok" href="https://www.42bangkok.com/" target="_blank">42 Bangkok Institute</a>
+							</h5>
+							<p class="font-semibold text-gray-400">None Degree of Software Engineering</p>
+						</div>
+					</div>
+					<div class="flex flex-row gap-4">
+						<img
+							loading="lazy"
+							src="images/eds/ku-logo.png"
+							alt="42bangkok-logo"
+							class="w-12 h-12">
+						<div>
+							<p class="text-sky-500 text-base font-extrabold">2007 - 2011</p>
+							<h5 class="text-slate-800 text-lg font-bold hover:underline">
+								<a aria-label="kasetsart" href="https://www.ku.ac.th/" target="_blank">Kasetsart University</a>
+							</h5>
+							<p class="font-semibold text-gray-400">Bachelor of Aerospace Engineering - Aviation Technology</p>
+						</div>
+					</div>
+					<div class="flex flex-row gap-4">
+						<img
+							loading="lazy"
+							src="images/eds/bodin-logo.png"
+							alt="42bangkok-logo"
+							class="w-12 h-12">
+						<div>
+							<p class="text-sky-500 text-base font-extrabold">2001 - 2007</p>
+							<h5 class="text-slate-800 text-lg font-bold hover:underline">
+								<a aria-label="bodindecha" href="https://www.bodin.ac.th/" target="_blank">Bodindecha School</a>
+							</h5>
+							<p class="font-semibold text-gray-400">Grade 12 of Science Engineering</p>
+						</div>
+					</div>
+					<div class="flex flex-row gap-4">
+						<img
+							loading="lazy"
+							src="images/eds/pps-logo.png"
+							alt="42bangkok-logo"
+							class="w-12 h-12">
+						<div>
+							<p class="text-sky-500 text-base font-extrabold">1995 - 2001</p>
+							<h5 class="text-slate-800 text-lg font-bold hover:underline">
+								<a aria-label="prayaprasert" href="https://www.prayaprasert.ac.th/" target="_blank">Prayaprasert School</a>
+							</h5>
+							<p class="font-semibold text-gray-400">Grade 6 of Elementary</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="works" class="flex flex-col justify-between h-full mt-16 md:mt-0 md:w-5/12 scroll-mt-24">
+				<h5 class="text-sky-500 text-xl font-extrabold">About experiences</h5>
+				<h3 class="text-3xl font-extrabold">Works</h3>
+				<p class="mt-4 font-semibold text-gray-400">I was intern in Air Asia. I work as Freelance job to find my interesting. I tried to code in 2016. I knew this is challenging work after that shift my work into technology field.</p>
+				<div class="mt-6 flex flex-col gap-6">
+					<div class="flex flex-row gap-4">
+						<img
+							loading="lazy"
+							src="images/eds/dmk-logo.png"
+							alt="dmk-logo"
+							class="w-12 h-12">
+						<div>
+							<p class="text-sky-500 text-base font-extrabold">2021 - Present</p>
+							<h5 class="text-slate-800 text-lg font-bold">Data Processing Lead</h5>
+							<p class="font-semibold text-gray-400 hover:underline">
+								<a aria-label="dhammakaya" href="Dhammakaya Foundation/" target="_blank">Dhammakaya Foundation</a>
+							</p>
+						</div>
+					</div>
+					<div class="flex flex-row gap-4">
+						<img
+							loading="lazy"
+							src="images/eds/gg-logo.png"
+							alt="gg-logo"
+							class="w-12 h-12">
+						<div>
+							<p class="text-sky-500 text-base font-extrabold">2020 - Present</p>
+							<h5 class="text-slate-800 text-lg font-bold">Founder</h5>
+							<p class="font-semibold text-gray-400 hover:underline">
+								<a aria-label="goodgeek" href="https://www.facebook.com/good.geek.community/" target="_blank">Good Geek Club</a>
+							</p>
+						</div>
+					</div>
+					<div class="flex flex-row gap-4">
+						<img
+							loading="lazy"
+							src="images/eds/dnet-logo.png"
+							alt="dnet-logo"
+							class="w-12 h-12">
+						<div>
+							<p class="text-sky-500 text-base font-extrabold">2020 - 2021 • 1 yrs 2 mos</p>
+							<h5 class="text-slate-800 text-lg font-bold">Cloud Development Lead</h5>
+							<p class="font-semibold text-gray-400 hover:underline">
+								<a aria-label="dnet2" href="https://www.dnet.co.th/" target="_blank">D-Net Technology co.,ltd</a>
+							</p>
+						</div>
+					</div>
+					<div class="flex flex-row gap-4">
+						<img
+							loading="lazy"
+							src="images/eds/dnet-logo.png"
+							alt="dnet-logo"
+							class="w-12 h-12">
+						<div>
+							<p class="text-sky-500 text-base font-extrabold">2018 - 2020 • 2 yrs 5 mos</p>
+							<h5 class="text-slate-800 text-lg font-bold">System Analysis & DevOps</h5>
+							<p class="font-semibold text-gray-400 hover:underline">
+								<a aria-label="dnet1" href="https://www.dnet.co.th/" target="_blank">D-Net Technology co.,ltd</a>
+							</p>
+						</div>
+					</div>
+					<div class="flex flex-row gap-4">
+						<div class="w-12 h-12 bg-gray-400 rounded-full flex justify-center items-center">
+							<i class="far fa-building fa-lg"></i>
+						</div>
+						<div>
+							<p class="text-sky-500 text-base font-extrabold">2016 - 2018 • 2 yrs</p>
+							<h5 class="text-slate-800 text-lg font-bold">Software Engineer</h5>
+							<p class="font-semibold text-gray-400 hover:underline">
+								<a aria-label="moahom" href="http://www.moahom.com/" target="_blank">Moahom co.,ltd</a>
+							</p>
+						</div>
+					</div>
+					<div class="flex flex-row gap-4">
+						<div class="w-12 h-12 bg-gray-400 rounded-full flex justify-center items-center">
+							<i class="far fa-building fa-lg"></i>
+						</div>
+						<div>
+							<p class="text-sky-500 text-base font-extrabold">2011 - 2015 • 5 yrs</p>
+							<h5 class="text-slate-800 text-lg font-bold">Freelance</h5>
+							<p class="font-semibold text-gray-400">Home</p>
+						</div>
+					</div>
+					<div class="flex flex-row gap-4">
+						<img
+							loading="lazy"
+							src="images/eds/aa-logo.png"
+							alt="airasia-logo"
+							class="w-12 h-12">
+						<div>
+							<p class="text-sky-500 text-base font-extrabold">2010 - 2010 (2 Month)</p>
+							<h5 class="text-slate-800 text-lg font-bold">System Support - Intern</h5>
+							<p class="font-semibold text-gray-400 hover:underline">
+								<a aria-label="airasia" href="https://www.airasia.com/th/th/" target="_blank">Thai Air Asia</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- education section -->
+		
+		<!-- expertise section -->
+		<div class="my-24">
+			<!-- Skills Section -->
+			<div id="expertise" class="w-100 flex flex-col items-center mx-6 scroll-mt-24">
+				<div class="md:w-3/5 text-left text-center">
+					<h5 class="text-sky-500 text-xl font-extrabold">What's my power ?</h5>
+					<h3 class="text-4xl text-slate-900 font-extrabold">My Expertise</h3>
+					<p class="font-semibold text-gray-400 mt-4">My skill about coding and technology that I familiar with it. Deeply skill, I'm using this technology. Widely skill, I have been use or I learn that technology.</p>
+				</div>
+			</div>
+			<div class="flex items-start mx-6 flex-row justify-around md:justify-evenly md:gap-20 h-auto">
+				<div class="flex flex-col mt-8 md:justify-between md:ml-0 h-full">
+					<h4 class="text-3xl text-slate-800 font-extrabold">Deeply</h3>
+					<div>
+						<div>
+							<p class="font-semibold text-gray-400 mt-4">Tyepscript</p>
+							<i class="fas fa-star fa-sm text-sky-300"></i>
+							<i class="fas fa-star fa-sm text-sky-300"></i>
+							<i class="fas fa-star fa-sm text-sky-300"></i>
+							<i class="fas fa-star fa-sm text-sky-300"></i>
+							<i class="fas fa-star fa-sm text-sky-300"></i>
+						</div>
+						<div>
+							<p class="font-semibold text-gray-400 mt-4">JS, NodeJS</p>
+							<i class="fas fa-star fa-sm text-sky-300"></i>
+							<i class="fas fa-star fa-sm text-sky-300"></i>
+							<i class="fas fa-star fa-sm text-sky-300"></i>
+							<i class="fas fa-star fa-sm text-sky-300"></i>
+							<i class="fas fa-star fa-sm text-sky-300"></i>
+						</div>
+						<div>
+							<p class="font-semibold text-gray-400 mt-4">Angular</p>
+							<i class="fas fa-star fa-sm text-sky-300"></i>
+							<i class="fas fa-star fa-sm text-sky-300"></i>
+							<i class="fas fa-star fa-sm text-sky-300"></i>
+							<i class="fas fa-star fa-sm text-sky-300"></i>
+							<i class="fas fa-star fa-sm text-sky-300"></i>
+						</div>
+						<div>
+							<p class="font-semibold text-gray-400 mt-4">NestJS</p>
+							<i class="fas fa-star fa-sm text-sky-300"></i>
+							<i class="fas fa-star fa-sm text-sky-300"></i>
+							<i class="fas fa-star fa-sm text-sky-300"></i>
+							<i class="fas fa-star fa-sm text-sky-300"></i>
+							<i class="fas fa-star fa-sm text-sky-300"></i>
+						</div>
+						<div>
+							<p class="font-semibold text-gray-400 mt-4">AWS</p>
+							<i class="fas fa-star fa-sm text-sky-300"></i>
+							<i class="fas fa-star fa-sm text-sky-300"></i>
+							<i class="fas fa-star fa-sm text-sky-300"></i>
+							<i class="fas fa-star fa-sm text-sky-300"></i>
+							<i class="fas fa-star fa-sm text-sky-300"></i>
+						</div>
+						<div>
+							<p class="font-semibold text-gray-400 mt-4">Serverless</p>
+							<i class="fas fa-star fa-sm text-sky-300"></i>
+							<i class="fas fa-star fa-sm text-sky-300"></i>
+							<i class="fas fa-star fa-sm text-sky-300"></i>
+							<i class="fas fa-star fa-sm text-sky-300"></i>
+							<i class="fas fa-star fa-sm text-sky-300"></i>
+						</div>
+						<div>
+							<p class="font-semibold text-gray-400 mt-4">Elasticsearch</p>
+							<i class="fas fa-star fa-sm text-sky-300"></i>
+							<i class="fas fa-star fa-sm text-sky-300"></i>
+							<i class="fas fa-star fa-sm text-sky-300"></i>
+							<i class="fas fa-star fa-sm text-sky-300"></i>
+							<i class="far fa-star fa-sm text-sky-300"></i>
+						</div>
+						<div>
+							<p class="font-semibold text-gray-400 mt-4">MongoDB</p>
+							<i class="fas fa-star fa-sm text-sky-300"></i>
+							<i class="fas fa-star fa-sm text-sky-300"></i>
+							<i class="fas fa-star fa-sm text-sky-300"></i>
+							<i class="fas fa-star fa-sm text-sky-300"></i>
+							<i class="far fa-star fa-sm text-sky-300"></i>
+						</div>
+						<div>
+							<p class="font-semibold text-gray-400 mt-4">HTML, CSS</p>
+							<i class="fas fa-star fa-sm text-sky-300"></i>
+							<i class="fas fa-star fa-sm text-sky-300"></i>
+							<i class="fas fa-star fa-sm text-sky-300"></i>
+							<i class="fas fa-star-half-alt fa-sm text-sky-300"></i>
+							<i class="far fa-star fa-sm text-sky-300"></i>
+						</div>
+					</div>
+				</div>
+				<div class="flex flex-col ml-10 mt-8 md:justify-between md:ml-0 h-full">
+					<h4 class="text-3xl text-slate-800 font-extrabold">Widely</h3>
+					<div>
+						<div>
+							<p class="font-semibold text-gray-400 mt-4">React Native</p>
+							<i class="fas fa-star fa-sm text-sky-300"></i>
+							<i class="fas fa-star fa-sm text-sky-300"></i>
+							<i class="fas fa-star fa-sm text-sky-300"></i>
+							<i class="fas fa-star-half-alt fa-sm text-sky-300"></i>
+							<i class="far fa-star fa-sm text-sky-300"></i>
+						</div>
+						<div>
+							<p class="font-semibold text-gray-400 mt-4">Flutter</p>
+							<i class="fas fa-star fa-sm text-sky-300"></i>
+							<i class="fas fa-star fa-sm text-sky-300"></i>
+							<i class="fas fa-star fa-sm text-sky-300"></i>
+							<i class="fas fa-star-half-alt fa-sm text-sky-300"></i>
+							<i class="far fa-star fa-sm text-sky-300"></i>
+						</div>
+						<div>
+							<p class="font-semibold text-gray-400 mt-4">Shell</p>
+							<i class="fas fa-star fa-sm text-sky-300"></i>
+							<i class="fas fa-star fa-sm text-sky-300"></i>
+							<i class="fas fa-star fa-sm text-sky-300"></i>
+							<i class="far fa-star fa-sm text-sky-300"></i>
+							<i class="far fa-star fa-sm text-sky-300"></i>
+						</div>
+						<div>
+							<p class="font-semibold text-gray-400 mt-4">Gitlab</p>
+							<i class="fas fa-star fa-sm text-sky-300"></i>
+							<i class="fas fa-star fa-sm text-sky-300"></i>
+							<i class="fas fa-star fa-sm text-sky-300"></i>
+							<i class="far fa-star fa-sm text-sky-300"></i>
+							<i class="far fa-star fa-sm text-sky-300"></i>
+						</div>
+						<div>
+							<p class="font-semibold text-gray-400 mt-4">PHP</p>
+							<i class="fas fa-star fa-sm text-sky-300"></i>
+							<i class="fas fa-star fa-sm text-sky-300"></i>
+							<i class="fas fa-star fa-sm text-sky-300"></i>
+							<i class="far fa-star fa-sm text-sky-300"></i>
+							<i class="far fa-star fa-sm text-sky-300"></i>
+						</div>
+						<div>
+							<p class="font-semibold text-gray-400 mt-4">MySQL</p>
+							<i class="fas fa-star fa-sm text-sky-300"></i>
+							<i class="fas fa-star fa-sm text-sky-300"></i>
+							<i class="fas fa-star fa-sm text-sky-300"></i>
+							<i class="far fa-star fa-sm text-sky-300"></i>
+							<i class="far fa-star fa-sm text-sky-300"></i>
+						</div>
+						<div>
+							<p class="font-semibold text-gray-400 mt-4">C</p>
+							<i class="fas fa-star fa-sm text-sky-300"></i>
+							<i class="fas fa-star fa-sm text-sky-300"></i>
+							<i class="fas fa-star fa-sm text-sky-300"></i>
+							<i class="far fa-star fa-sm text-sky-300"></i>
+							<i class="far fa-star fa-sm text-sky-300"></i>
+						</div>
+						<div>
+							<p class="font-semibold text-gray-400 mt-4">Java</p>
+							<i class="fas fa-star fa-sm text-sky-300"></i>
+							<i class="fas fa-star fa-sm text-sky-300"></i>
+							<i class="far fa-star fa-sm text-sky-300"></i>
+							<i class="far fa-star fa-sm text-sky-300"></i>
+							<i class="far fa-star fa-sm text-sky-300"></i>
+						</div>
+						<div>
+							<p class="font-semibold text-gray-400 mt-4">GCP</p>
+							<i class="fas fa-star fa-sm text-sky-300"></i>
+							<i class="fas fa-star fa-sm text-sky-300"></i>
+							<i class="far fa-star fa-sm text-sky-300"></i>
+							<i class="far fa-star fa-sm text-sky-300"></i>
+							<i class="far fa-star fa-sm text-sky-300"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>		
+		<!-- expertise section -->
+
+		<!-- certified section -->
+		<div class="my-24">
+			<div id="certified" class="w-100 flex flex-col items-center mx-6 mt-12 scroll-mt-24">
+				<div class="md:w-3/5 text-center">
+					<h5 class="text-sky-500 text-xl font-extrabold">What's I passed?</h5>
+					<h3 class="text-4xl text-slate-900 font-extrabold">My Certified</h3>
+					<p class="font-semibold text-gray-400 mt-4">The skill have approved from authority association. Including with Coursed certified and exam certified</p>
+				</div>
+				<div class="flex flex-row justify-center flex-wrap gap-x-10 gap-y-12 mt-8">
+					<div class="flex flex-col rounded-lg shadow bg-white max-w-xs">
+						<picture class="rounded-t-lg self-center my-4 px-5 w-48 h-auto object-cover">
+							<source type="image/webp" srcset="images/certs/aws-sa-cert.webp">
+							<source type="image/png" srcset="images/certs/aws-sa-cert.png">
+							<img
+								loading="lazy"
+								alt="aws-sa-cert"
+								src="images/certs/original/aws-sa-cert.png"/>
+						</picture>
+						<div class="flex flex-col p-6">
+							<h5 class="text-xl text-sky-900 font-extrabold">AWS Certified Solutions Architect – Associate</h5>
+							<p class="font-semibold text-gray-400 mt-2">Certification validates the ability to design and implement distributed systems on AWS.</p>
+							<a aria-label="aws-dev-cert" href="https://www.credly.com/badges/108ae387-635a-42eb-8a63-dc01512232ee/public_url" target="_blank" class="text-sm text-blue-500 font-semibold mt-3">
+								Explore <i class="far fa-chevron-double-right fa-xs"></i>
+							</a>
+						</div>
+					</div>
+					<div class="flex flex-col rounded-lg shadow bg-white max-w-xs">
+						<picture class="rounded-t-lg self-center my-4 px-5 w-48 h-auto object-cover">
+							<source type="image/webp" srcset="images/certs/aws-dev-cert.webp">
+							<source type="image/png" srcset="images/certs/aws-dev-cert.png">
+							<img
+								loading="lazy"
+								alt="aws-dev-cert"
+								src="images/certs/original/aws-dev-cert.png"/>
+						</picture>
+						<div class="flex flex-col p-6">
+							<h5 class="text-xl text-sky-900 font-extrabold">AWS Certified Developer – Associate</h5>
+							<p class="font-semibold text-gray-400 mt-2">Certification validates the ability to write and deploy cloud-based applications.</p>
+							<a aria-label="aws-sa-cert" href="https://www.credly.com/badges/cb20f3c5-8093-4de2-88df-169110e5021f/public_url" target="_blank" class="text-sm text-blue-500 font-semibold mt-3">
+								Explore <i class="far fa-chevron-double-right fa-xs"></i>
+							</a>
+						</div>
+					</div>
+					<div class="flex flex-col rounded-lg shadow bg-white max-w-xs">
+						<picture class="rounded-t-lg self-center my-4 px-5 w-48 h-auto object-cover">
+							<source type="image/webp" srcset="images/certs/aws-sysops-cert.webp">
+							<source type="image/png" srcset="images/certs/aws-sysops-cert.png">
+							<img
+								loading="lazy"
+								alt="aws-sysops-cert"
+								src="images/certs/original/aws-sysops-cert.png"/>
+						</picture>
+						<div class="flex flex-col p-6">
+							<h5 class="text-xl text-sky-900 font-extrabold">AWS Certified SysOps Administrator – Associate</h5>
+							<p class="font-semibold text-gray-400 mt-2">Certification demonstrates experience deploying, managing, and operating workloads on AWS</p>
+							<a aria-label="aws-sysops-cert" href="https://www.credly.com/badges/9e55f0a3-fcb2-455a-bb08-888d0cfdb5e7/public_url" target="_blank" class="text-sm text-blue-500 font-semibold mt-3">
+								Explore <i class="far fa-chevron-double-right fa-xs"></i>
+							</a>
+						</div>
+					</div>
+					<div class="flex flex-col rounded-lg shadow bg-white max-w-xs">
+						<picture class="rounded-t-lg self-center my-4 px-5 w-48 h-auto object-cover">
+							<source type="image/webp" srcset="images/certs/aws-devops-cert.webp">
+							<source type="image/png" srcset="images/certs/aws-devops-cert.png">
+							<img
+								loading="lazy"
+								alt="aws-devops-cert"
+								src="images/certs/original/aws-devops-cert.png"/>
+						</picture>
+						<div class="flex flex-col p-6">
+							<h5 class="text-xl text-sky-900 font-extrabold">AWS Certified DevOps Engineer – Professional</h5>
+							<p class="font-semibold text-gray-400 mt-2">Certification validates the ability to automate the testing and deployment of AWS infrastructure and applications</p>
+							<a aria-label="aws-devops-cert" href="https://www.credly.com/badges/072f4b9f-341a-410c-bf43-8b5477aa6e1b/public_url" target="_blank" class="text-sm text-blue-500 font-semibold mt-3 justify-self-end">
+								Explore <i class="far fa-chevron-double-right fa-xs"></i>
+							</a>
+						</div>
+					</div>
+					<div class="flex flex-col rounded-lg shadow bg-white max-w-xs">
+						<picture class="rounded-t-lg self-center my-4 px-5 w-48 h-auto object-cover">
+							<source type="image/webp" srcset="images/certs/gcp-lab-cert.webp">
+							<source type="image/png" srcset="images/certs/gcp-lab-cert.png">
+							<img
+								loading="lazy"
+								alt="gcp-lab-cert"
+								src="images/certs/original/gcp-lab-cert.png"/>
+						</picture>
+						<div class="flex flex-col p-6">
+							<h5 class="text-xl text-sky-900 font-extrabold">Google Cloud Lab Badges</h5>
+							<p class="font-semibold text-gray-400 mt-1">Earned 12 Google cloud labs. To completed introduction fundamentals of Google Cloud</p>
+							<a aria-label="gcp-lab-cert" href="https://www.cloudskillsboost.google/public_profiles/48156563-9a0b-495a-8f75-36624e642307" target="_blank" class="text-sm text-blue-500 font-semibold mt-3">
+								Explore <i class="far fa-chevron-double-right fa-xs"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>		
+		<!-- certified section -->
+
+		<!-- activities section -->
+		<div class="my-24">
+			<!-- Skills Section -->
+			<div id="activities" class="w-100 flex flex-col items-center mx-6 scroll-mt-24">
+				<div class="md:w-1/3 text-left md:text-center">
+					<h5 class="text-sky-500 text-xl font-extrabold">What I did ?</h5>
+					<h3 class="text-4xl text-slate-900 font-extrabold">My Activities</h3>
+					<p class="font-semibold text-gray-400 mt-4">I run the social activities to evolve developer in Thailand in sometime. I love to join technology activities for develop my skill.</p>
+				</div>
+				<div id="activity-buttons" class="mt-6 flex gap-x-6">
+					<button
+						aria-label="activities-all"
+						onclick="toggleActivityCards(event, 'ALL')"
+						id="activities-all"
+						class="inline-block px-6 py-2 rounded-full bg-sky-400 text-white  w-sm">All</button>
+					<button
+						aria-label="activities-social"
+						onclick="toggleActivityCards(event, 'SOCIAL')"
+						id="activities-social"
+						class="inline-block px-6 py-2 rounded-full bg-white text-gray-400 w-sm">Social</button>
+					<button
+						aria-label="activities-tech"
+						onclick="toggleActivityCards(event, 'TECH')"
+						id="activities-tech"
+						class="inline-block px-6 py-2 rounded-full bg-white text-gray-400 w-sm">Tech</button>
+					<button
+						aria-label="activities-other"
+						onclick="toggleActivityCards(event, 'OTHER')"
+						id="activities-other"
+						class="inline-block px-6 py-2 rounded-full bg-white text-gray-400 w-sm">Other</button>
+				</div>
+				<div id="actvity-cards" class="flex flex-row justify-center items-start flex-wrap gap-x-10 gap-y-12 mt-8">
+					<div data-type="social" class="flex flex-col justify-center items-center w-60 text-center">
+							<picture>
+								<source type="image/webp" srcset="images/activities/aws-event-speaker.webp">
+								<source type="image/png" srcset="images/activities/aws-event-speaker.jpg">
+								<img
+									loading="lazy"
+									alt="aws-event-speaker"
+									src="images/activities/original/aws-event-speaker.jpg"
+									class="object-cover rounded-2xl w-60 h-60">
+							</picture>
+							<h3 class="text-xl text-slate-900 font-extrabold mt-3">AWS DB Speaker</h3>
+							<p class="font-semibold text-gray-400 mt-2">Evant Driven on AWS DynamoDB Stream</p>
+					</div>
+					<div data-type="social" class="flex flex-col justify-center items-center w-60 text-center">
+							<picture>
+								<source type="image/webp" srcset="images/activities/aws-devops-speaker.webp">
+								<source type="image/png" srcset="images/activities/aws-devops-speaker.jpg">
+								<img
+									loading="lazy"
+									alt="aws-devops-speaker"
+									src="images/activities/original/aws-devops-speaker.jpg"
+									class="object-cover rounded-2xl w-60 h-60">
+							</picture>
+							<h3 class="text-xl text-slate-900 font-extrabold mt-3">AWS DevOps Speaker</h3>
+							<p class="font-semibold text-gray-400 mt-2">Devops philosophy and tools on AWS Community day</p>
+					</div>
+					<div data-type="social" class="flex flex-col justify-center items-center w-60 text-center">
+							<picture>
+								<source type="image/webp" srcset="images/activities/aws-sls-speaker.webp">
+								<source type="image/png" srcset="images/activities/aws-sls-speaker.jpg">
+								<img
+									loading="lazy"
+									alt="aws-sls-speaker"
+									src="images/activities/original/aws-sls-speaker.jpg"
+									class="object-cover rounded-2xl w-60 h-60">
+							</picture>
+							<h3 class="text-xl text-slate-900 font-extrabold mt-3">Serverless Speaker</h3>
+							<p class="font-semibold text-gray-400 mt-2">Gigabyte serverless event in Thailand</p>
+					</div>
+					<div data-type="tech" class="flex flex-col justify-center items-center w-60 text-center">
+							<picture>
+								<source type="image/webp" srcset="images/activities/aws-gamedays.webp">
+								<source type="image/png" srcset="images/activities/aws-gamedays.jpg">
+								<img
+									loading="lazy"
+									alt="aws-gamedays"
+									src="images/activities/original/aws-gamedays.jpg"
+									class="object-cover rounded-2xl w-60 h-60">
+							</picture>
+							<h3 class="text-xl text-slate-900 font-extrabold mt-3">AWS Gamedays</h3>
+							<p class="font-semibold text-gray-400 mt-2">rank 30/300 from AWS re:invent2019 1day hackathon</p>
+					</div>
+					<div data-type="tech" class="flex flex-col justify-center items-center w-60 text-center">
+							<picture>
+								<source type="image/webp" srcset="images/activities/aws-reinvent2018.webp">
+								<source type="image/png" srcset="images/activities/aws-reinvent2018.jpg">
+								<img
+									loading="lazy"
+									alt="aws-reinvent2018"
+									src="images/activities/original/aws-reinvent2018.jpg"
+									class="object-cover rounded-2xl w-60 h-60">
+							</picture>
+							<h3 class="text-xl text-slate-900 font-extrabold mt-3">AWS re:invent2018</h3>
+							<p class="font-semibold text-gray-400 mt-2">The biggest yearly AWS event at Las Vegas</p>
+					</div>
+					<div data-type="tech" class="flex flex-col justify-center items-center w-60 text-center">
+							<picture>
+								<source type="image/webp" srcset="images/activities/aws-reinvent2019.webp">
+								<source type="image/png" srcset="images/activities/aws-reinvent2019.jpg">
+								<img
+									loading="lazy"
+									alt="aws-reinvent2019"
+									src="images/activities/original/aws-reinvent2019.jpg"
+									class="object-cover rounded-2xl w-60 h-60">
+							</picture>
+							<h3 class="text-xl text-slate-900 font-extrabold mt-3">AWS re:invent2019</h3>
+							<p class="font-semibold text-gray-400 mt-2">The biggest yearly AWS event at Las Vegas</p>
+					</div>
+					<div data-type="tech" class="flex flex-col justify-center items-center w-60 text-center">
+							<picture>
+								<source type="image/webp" srcset="images/activities/aws-db-training.webp">
+								<source type="image/png" srcset="images/activities/aws-db-training.jpg">
+								<img
+									loading="lazy"
+									alt="aws-db-training"
+									src="images/activities/original/aws-db-training.jpg"
+									class="object-cover rounded-2xl w-60 h-60">
+							</picture>
+							<h3 class="text-xl text-slate-900 font-extrabold mt-3">AWS Trainning</h3>
+							<p class="font-semibold text-gray-400 mt-2">a ton of AWS trainning associate and professional courses</p>
+					</div>
+					<div data-type="tech" class="flex flex-col justify-center items-center w-60 text-center">
+							<picture>
+								<source type="image/webp" srcset="images/activities/gcp-training.webp">
+								<source type="image/png" srcset="images/activities/gcp-training.jpg">
+								<img
+									loading="lazy"
+									alt="gcp-training"
+									src="images/activities/original/gcp-training.jpg"
+									class="object-cover rounded-2xl w-60 h-60">
+							</picture>
+							<h3 class="text-xl text-slate-900 font-extrabold mt-3">GCP Trainning</h3>
+							<p class="font-semibold text-gray-400 mt-2">Google Cloud Platform event</p>
+					</div>
+					<div data-type="other" class="flex flex-col justify-center items-center w-60 text-center">
+							<picture>
+								<source type="image/webp" srcset="images/activities/other-volunteer-traffic.webp">
+								<source type="image/png" srcset="images/activities/other-volunteer-traffic.jpg">
+								<img
+									loading="lazy"
+									alt="other-volunteer-traffic"
+									src="images/activities/original/other-volunteer-traffic.jpg"
+									class="object-cover rounded-2xl w-60 h-60">
+							</picture>
+							<h3 class="text-xl text-slate-900 font-extrabold mt-3">Traffic Volunteer</h3>
+							<p class="font-semibold text-gray-400 mt-2">Dhammayatra event, the biggest pilgrim on the roads in Thailand</p>
+					</div>
+					<div data-type="other" class="flex flex-col justify-center items-center w-60 text-center">
+							<picture>
+								<source type="image/webp" srcset="images/activities/other-voluteer-monk-training.webp">
+								<source type="image/png" srcset="images/activities/other-voluteer-monk-training.jpg">
+								<img
+									loading="lazy"
+									alt="other-voluteer-monk-training"
+									src="images/activities/original/other-voluteer-monk-training.jpg"
+									class="object-cover rounded-2xl w-60 h-60">
+							</picture>
+							<h3 class="text-xl text-slate-900 font-extrabold mt-3">Educated Volunteer</h3>
+							<p class="font-semibold text-gray-400 mt-2">Share knowledge to underprivileged for evolve world</p>
+					</div>
+					<div data-type="other" class="flex flex-col justify-center items-center w-60 text-center">
+							<picture>
+								<source type="image/webp" srcset="images/activities/other-runner.webp">
+								<source type="image/png" srcset="images/activities/other-runner.jpg">
+								<img
+									loading="lazy"
+									alt="other-runner"
+									src="images/activities/original/other-runner.jpg"
+									class="object-cover rounded-2xl w-60 h-60">
+							</picture>
+							<h3 class="text-xl text-slate-900 font-extrabold mt-3">Running Sharity</h3>
+							<p class="font-semibold text-gray-400 mt-2">Running for sharity to help other people with my stength</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- activities section -->
+
+		<!-- thisproject section -->
+		<div class="my-24">
+			<div id="thisproject" class="w-100 flex flex-col items-center mx-6 scroll-mt-24">
+				<div class="md:w-4/5 text-left text-center">
+					<h5 class="text-sky-500 text-xl font-extrabold">How's about this project ?</h5>
+					<h3 class="text-4xl text-slate-900 font-extrabold">This Project</h3>
+					<p class="font-semibold text-gray-400 mt-4">
+						This portfolio is a rush project in <span class="text-sky-400">42 Bangkok discovery piscine</span>.
+						This event is organized between 8 - 10 May 2022.
+						This project is build with specific technology.
+						This project tech stack can called
+						<span class="text-sky-400">
+							<a href="http://vanilla-js.com/" target="_blank">VanilaJS.</a>
+						</span>.
+						I use only simple library 
+						<span class="text-sky-400">
+							<a href="https://tailwindcss.com/">Tailwindcss</a>
+						</span>
+						as CSS framework and <span class="text-sky-400">
+							<a href="https://fontawesome.com/">Fontawesome</a>
+						</span> 
+						as icon, no more than this.
+						It's as far as I can do it in 2 days.
+						you also can learn my code in my
+						<span class="text-sky-400">
+							<a href="https://github.com/viruskizz/42bangkok-discovery-piscine" target="_blank">github.</a>
+						</span>
+					</p>
+				</div>
+			</div>
+		</div>		
+		<!-- thisproject section -->
+	</div>
+
+	<!-- footer section -->
+	<footer id="footer" class="bg-slate-900 py-5 mt-5 px-10">
+		<div class="container mx-auto my-16 text-gray-400 font-medium flex flex-col items-center gap-y-10 sm:flex-row sm:items-start sm:justify-around">
+			<div>
+				<h2 class="text-4xl font-extrabold text-white">Let's Talk!</h2>
+				<h4 class="text-gray-400 text-2xl font-extrabold mt-4">Contact Info</h4>
+				<p class="font-semibold text-gray-400 mt-2 leading-relaxed">
+					kizzaraiva@gmail.com<br>
+					Bangkok 10230, Thailand<br>
+					+66 083 xxx xx40
+				</p>
+			</div>
+			<div>
+				<h5 class="text-xl font-bold text-white">Links</h5>
+				<div class="flex flex-col mt-4 gap-2">
+					<a aria-label="link-home" href="#" class="hover:text-sky-700 hover:cursor-pointer">Home</a>
+					<a aria-label="link-aboutme" href="#aboutme" class="hover:text-sky-700 hover:cursor-pointer">About me</a>
+					<a aria-label="link-education" href="#education" class="hover:text-sky-700 hover:cursor-pointer">Education</a>
+					<a aria-label="link-works" href="#works" class="hover:text-sky-700 hover:cursor-pointer">Works</a>
+					<a aria-label="link-expertise" href="#expertise" class="hover:text-sky-700 hover:cursor-pointer">Expertise</a>
+					<a aria-label="link-certified" href="#certified" class="hover:text-sky-700 hover:cursor-pointer">Certified</a>
+					<a aria-label="link-activities" href="#activities" class="hover:text-sky-700 hover:cursor-pointer">Activities</a>
+				</div>
+			</div>
+			<div>
+				<h5 class="text-xl font-bold text-white">Resources</h5>
+				<div class="flex flex-col items-start mt-4 gap-2">
+					<a aria-label="rsc-tailwind" href="https://tailwindcss.com/" target="_blank" class="hover:text-sky-700 hover:cursor-pointer">Tailwindcss</a>
+					<a aria-label="rsc-port" href="https://portfolio-tailwind.preview.uideck.com/demos/personal/" target="_blank" class="hover:text-sky-700 hover:cursor-pointer">Ideation</a>
+					<a aria-label="rsc-icon" href="https://fontawesome.com/" target="_blank" class="hover:text-sky-700 hover:cursor-pointer">Fontawesome</a>
+					<a aria-label="rsc-42bangkok" href="https://www.42bangkok.com/" target="_blank" class="hover:text-sky-700 hover:cursor-pointer">42Bangkok</a>
+				</div>
+			</div>
+		</div>
+		<hr class="mx-20">
+		<div class="h-32 flex flex-col justify-evenly items-center">
+			<div class="flex flex-row gap-3 mt-4">
+				<a aria-label="my-facebook" href="https://www.facebook.com/araiva.viruskizz/" target="_blank" class="flex items-center justify-center text-slate-900 bg-gray-400 w-8 h-8 rounded-full hover:bg-sky-700 hover:border-white">
+					<i class="fab fa-facebook-f fa-sm"></i>
+				</a>
+				<a aria-label="my-twitter" href="https://twitter.com/viruskizz/" target="_blank" class="flex items-center justify-center text-slate-900 bg-gray-400 w-8 h-8 rounded-full hover:bg-sky-700 hover:border-white">
+					<i class="fab fa-twitter fa-sm"></i>
+				</a>
+				<a aria-label="my-linkendin" href="https://www.linkedin.com/in/araiva/" target="_blank" class="flex items-center justify-center text-slate-900 bg-gray-400 w-8 h-8 rounded-full hover:bg-sky-700 hover:border-white">
+					<i class="fab fa-linkedin fa-sm"></i>
+				</a>
+				<a aria-label="my-github" href="https://github.com/viruskizz/" target="_blank" class="flex items-center justify-center text-slate-900 bg-gray-400 w-8 h-8 rounded-full hover:bg-sky-700 hover:border-white">
+					<i class="fab fa-github fa-sm"></i>
+				</a>
+				<a aria-label="my-discord" href="https://discordapp.com/users/306980438004727808/" target="_blank" class="flex items-center justify-center text-slate-900 bg-gray-400 w-8 h-8 rounded-full hover:bg-sky-700 hover:border-white">
+					<i class="fab fa-discord fa-sm"></i>
+				</a>
+			</div>
+			<p class="text-gray-400">All rights reserved by © Portfolio Viruskizz 2022</p>
+		</div>
+	</footer>
+	<!-- footer section -->
+</body>
+</html>
