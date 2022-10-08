@@ -66,8 +66,10 @@ class Player {
     const {s} = game.tile;
     const {mv} = game;
     const {img, position, face, act} = this;
-    const isAnimateX = position.x % (s / mv) < s / (mv * 2);
-    const isAnimateY = position.y % (s / mv) < s / (mv * 2);
+    // const isAnimateX = position.x % (s / mv) < s / (game.mv * 2);
+    // const isAnimateY = position.y % (s / mv) < s / (game.mv * 2);
+    const isAnimateX = (new Utility()).isHalfTile(game, position.x);
+    const isAnimateY = (new Utility()).isHalfTile(game, position.y);
     if (act === 'STAND' && face === 'DOWN')
       image(img.standDown, position.x, position.y, s, s);
     else if (act === 'STAND' && face === 'UP')

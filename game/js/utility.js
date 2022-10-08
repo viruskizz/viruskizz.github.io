@@ -23,4 +23,9 @@ class Utility {
   isHoldKeyRight(key) {
     return keyIsPressed && this.isKeyRight(key);
   }
+  isHalfTile(game, pos) {
+    const {s} = game.tile;
+    const inPos = pos % s;
+    return inPos < (s / 2);
+  }
 }

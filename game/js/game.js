@@ -35,13 +35,17 @@ function setPanel() {
   if (windowWidth < gameWidth + gameWidth *margin) {
     gameWidth = windowWidth - windowWidth * margin;
   }
-  game.ts = gameWidth / game.tw;
+  game.tile.s = gameWidth / game.tile.w;
+  game.mv = Math.ceil(game.tile.s / 16)
 }
 
 function windowResized() {
+  os = game.tile.s;
   setPanel();
   const {w, h, s} = game.tile;
   resizeCanvas(w * s, h * s);
+  player.position.x = (player.position.x / os) * s;
+  player.position.y = (player.position.y / os) * s;
 }
 
 function keyReleased() {
