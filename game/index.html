@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.2/p5.min.js" integrity="sha512-rCZdHNB0AePry6kAnKAVFMRfWPmUXSo+/vlGtrOUvhsxD0Punm/xWbEh+8vppPIOzKB9xnk42yCRZ5MD/jvvjQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.2/addons/p5.sound.min.js" integrity="sha512-WzkwpdWEMAY/W8WvP9KS2/VI6zkgejR4/KTxTl4qHx0utqeyVE0JY+S1DlMuxDChC7x0oXtk/ESji6a0lP/Tdg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/render.js"></script>
+    <script src="js/utility.js"></script>
+    <script src="js/object.js"></script>
+    <script src="js/player.js"></script>
+    <script src="js/game.js"></script>
+    <title>My mini game</title>
+</head>
+<body class="bg-slate-900 text-slate-100">
+    <navbar></navbar>
+    <div class="container mx-auto">
+        <header></header>
+        <div>
+            <div id="game-screen"></div>
+            <div id="game-panel" class="h-72">
+                <div class="h-48"></div>
+                <div class="flex flex-row">
+                    <div id="direction-pad">
+                        <div>
+                            <button class="border translate-x-0.5 rounded-md w-24 h-10 hover:bg-sky-700"></button>
+                            <button class="rotate-90 -translate-y-16 -translate-x-7 border rounded-md w-24 h-10 hover:bg-sky-700"></button>
+                            <button class="rotate-90 translate-y-16 -translate-x-32 border rounded-md w-24 h-10 hover:bg-sky-700"></button>
+                            <button class="border -translate-x-40 rounded-md w-24 h-10 hover:bg-sky-700"></button>
+                        </div>
+                    </div>
+                    <div id="central-pad">
+                        <button class="border rounded-md px-4 py-2 hover:bg-sky-700">select</button>
+                        <button class="border rounded-md px-4 py-2 hover:bg-sky-700">start</button>
+                    </div>
+                    <div id="action-pad">
+                        <button class="border rounded-md px-4 py-2 hover:bg-sky-700">X</button>
+                        <button class="border rounded-md px-4 py-2 hover:bg-sky-700">Y</button>
+                        <button class="border rounded-md px-4 py-2 hover:bg-sky-700">A</button>
+                        <button class="border rounded-md px-4 py-2 hover:bg-sky-700">B</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer></footer>
+    </div>
+</body>
+</html>
