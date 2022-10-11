@@ -1,8 +1,7 @@
 const components = [
 	'navbar',
 	'header',
-	// 'panel',
-	// 'footer'
+	'footer'
 ];
 
 const path = './components';

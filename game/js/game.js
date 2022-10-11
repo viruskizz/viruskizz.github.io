@@ -20,6 +20,7 @@ function setup() {
   const {w, h, s} = game.tile;
   const cnv = createCanvas(w * s, h * s);
   cnv.class('mx-auto')
+  cnv.parent('game-screen');
 }
 
 function draw() {
